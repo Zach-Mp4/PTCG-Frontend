@@ -1,0 +1,109 @@
+.profile-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .profile-card {
+    background-color: #f5f8fa;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-username {
+    font-size: 24px;
+    color: #f678ff;
+  }
+  
+  .profile-divider {
+    border: 0;
+    height: 1px;
+    background-color: #e1e8ed;
+    margin: 20px 0;
+  }
+  
+  .profile-collection-title {
+    font-size: 20px;
+    color: #14171a;
+    margin-bottom: 10px;
+  }
+  
+  .profile-card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adds spacing between cards */
+    justify-content: center; /* Centers cards horizontally */
+  }
+  
+  .profile-pkmn-card {
+    flex: 1 1 calc(25% - 10px); /* Adjusts card width and maintains spacing */
+    max-width: 200px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .profile-pkmn-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 80%;
+    max-width: 900px;
+    z-index: 1000;
+    overflow: hidden;
+  }
+  
+  .profile-modal-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .profile-modal-image {
+    flex: 1;
+    max-width: 300px;
+    margin-right: 20px;
+  }
+  
+  .profile-modal-text {
+    flex: 2;
+  }
+  
+  .profile-modal-title {
+    font-size: 24px;
+    color: #14171a;
+    margin-bottom: 10px;
+  }
+  
+  .profile-modal-rarity {
+    font-size: 18px;
+    color: #657786;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #657786;
+  }

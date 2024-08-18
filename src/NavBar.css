@@ -1,0 +1,89 @@
+/* NavBar.css */
+
+/* General styling for the navbar container */
+/* Assuming you have a class for your brand element in your NavBar */
+.navbar-brand {
+    font-size: 1.5rem; /* Adjust the size as needed */
+    font-weight: bold;
+    color: #333; /* Dark gray for text color */
+    text-transform: uppercase; /* Optional: makes the text uppercase */
+    text-decoration: none; /* Removes underline from links */
+    padding: 0.5rem 1rem; /* Adjust padding for spacing */
+    display: inline-block; /* Ensures proper spacing */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+.navbar-brand:hover {
+    color: #f678ff; /* Change color on hover (e.g., a shade of blue) */
+}
+
+.navbar-container {
+    background-color: #ffffff; /* White background */
+    border-bottom: 1px solid #e6ecf0; /* Light gray border at the bottom */
+    padding: 0.5rem 1rem; /* Padding around the navbar */
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Logo styling */
+  .navbar-logo {
+    height: 40px; /* Adjust the size of the logo */
+  }
+  
+  /* Styling for the nav links */
+  .nav-links {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push the links to the right side */
+    list-style-type: none; /* Remove bullets */
+    padding-left: 0; /* Remove left padding */
+  }
+  
+  /* Individual nav link styling */
+  .nav-link {
+    color: #f678ff;            /* Twitter blue color for the links */
+    font-size: 1rem;           /* Standard font size */
+    padding: 0.5rem 1rem;      /* Padding around the link */
+    text-decoration: none;     /* Remove underline */
+    font-weight: bold;         /* Bold text */
+  }
+  
+  .nav-link:hover {
+    background-color: #e8f5fe; /* Light blue background on hover */
+    border-radius: 25px;       /* Rounded corners */
+  }
+  
+  .nav-link.active {
+    background-color: #f678ff; /* Active link with Twitter blue background */
+    color: #ffffff;            /* White text for active link */
+    border-radius: 25px;       /* Rounded corners */
+  }
+  
+  /* Remove bullets from NavItems */
+  .nav-item {
+    list-style-type: none;
+  }
+  
+  /* Global removal of bullets from lists */
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    .navbar-container {
+      padding: 0.5rem;
+    }
+  
+    .navbar-logo {
+      height: 30px; /* Smaller logo for mobile */
+    }
+  
+    .nav-link {
+      padding: 0.5rem;
+      font-size: 0.9rem; /* Smaller font size for mobile */
+    }
+  }
+  

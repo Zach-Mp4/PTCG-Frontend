@@ -1,0 +1,61 @@
+/* Register.css */
+.formSection {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f678ff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #f460ff;
+  }
+  
+  p {
+    color: red;
+    font-size: 14px;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+  
+  h3 a {
+    color: #f460ff;
+    text-decoration: none;
+  }
+  
+  h3 a:hover {
+    text-decoration: underline;
+  }
+  
