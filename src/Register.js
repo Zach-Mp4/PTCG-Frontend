@@ -29,7 +29,7 @@ function Register({ user, setUser }) {
 
         navigate('/');
       } catch (err) {
-        setError(err.message); // Use err.message for better error display
+        setError(err); // Use err.message for better error display
       }
     };
 
@@ -49,8 +49,7 @@ function Register({ user, setUser }) {
 
     return (
         <section className="formSection">
-          {error && <p>{error}</p>} {/* Display error message */}
-          <form onSubmit={handleSubmit}>
+            {error && <p style={{ color: 'red' }}>{error}</p>} {/* Display error message */}          <form onSubmit={handleSubmit}>
             <label htmlFor="username">Username:</label>
             <input
               id="username"

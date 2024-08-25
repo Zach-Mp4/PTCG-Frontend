@@ -68,6 +68,7 @@ function Login({user, setUser}){
           <input
             id="password"
             name="password"
+            type="password"
             value={formData.password}
             onChange={handleChange}
             required
